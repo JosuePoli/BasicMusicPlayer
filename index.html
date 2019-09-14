@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+
+<h1><i class="fa fa-music" aria-hidden="true"></i>Playlist<i class="fa fa-music" aria-hidden="true"></i> </h1>
+<h1>  Un click para darle play a la canción<br> Dos clicks para pausar </h1>
+<h3>
+  La <a href="./razones.html"  target="_blank">razones</a> por las cuales estas canciones.
+</h3>
+
+<main>
+  
+<div class="a song">Cant stand it</div> 
+<div class="b song">Cielo Rojo</div> 
+<div class="c song">Pajarito del amor</div> 
+
+<div class="d song">Total eclipse of the heart</div> 
+<div class="e song">Llamado de Emergencia</div> 
+<div class="f song">Antologia</div>
+
+<div class="g song">Si pudiera</div> 
+<div class="h song">Quedate</div> 
+<div class="i song">La distancia entre los puntos</div>
+
+<div class="j song">Error</div>
+<div class="k song">Somebody Else</div>
+<div class="l song">Let her go</div>
+
+<div class="m song">En su lugar</div>
+<div class="n song">The Only Exception</div>
+<div class="o song">James Dean and Audrey Hepburn</div>
+
+<div class="p song">Snuff</div>
+<div class="q song">Vermillion II</div>
+<div class="r song">With me</div>
+
+<div class="s song">Thunder</div>
+<div class="t song">Por si me faltas</div>
+<div class="u song">I wont give up</div>
+
+<div class="v song">Nuestra cancion</div>
+
+
+
+ 
+</main>
+
+
+
+<script>
+ 
+var divlenght = document.querySelectorAll('.song').length;
+console.log(divlenght);
+
+for(var i=0; i<divlenght; i++) {
+ var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+
+ var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
+}
+
+var song1 = new Audio();
+song1.src = "music/CantStandIt.mp3";
+
+var song2 = new Audio();
+song2.src = "music/CieloRojo.mp3";
+
+var song3 = new Audio();
+song3.src = "music/PajaritoDelAmor.mp3";
+
+var song4 = new Audio();
+song4.src = "music/TotalEclipseOfTheHeart.mp3";
+
+var song5 = new Audio();
+song5.src = "music/LlamadoDeEmergencia.mp3";
+
+var song6 = new Audio();
+song6.src = "music/Antologia.mp3";
+
+var song7 = new Audio();
+song7.src = "music/SiPudiera.mp3";
+
+var song8 = new Audio();
+song8.src = "music/Quedate.mp3";
+
+var song9 = new Audio();
+song9.src = "music/LaDistanciaEntreLosPuntos.mp3";
+
+var song10 = new Audio();
+song10.src = "music/Error.mp3";
+
+var song11 = new Audio();
+song11.src = "music/SomebodyElse.mp3";
+
+var song12 = new Audio();
+song12.src = "music/LetHerGo.mp3";
+
+var song13 = new Audio();
+song13.src = "music/EnSuLugar.mp3";
+
+var song14 = new Audio();
+song14.src = "music/TheOnlyException.mp3";
+
+var song15 = new Audio();
+song15.src = "music/JamesDeanAudreyHepburn.mp3";
+
+var song16 = new Audio();
+song16.src = "music/Snuff.mp3";
+
+var song17 = new Audio();
+song17.src = "music/VermillionII.mp3";
+
+var song18 = new Audio();
+song18.src = "music/WithMe.mp3";
+
+var song19 = new Audio();
+song19.src = "music/Thunder.mp3";
+
+var song20 = new Audio();
+song20.src = "music/PorSiMeFaltas.mp3";
+
+var song21 = new Audio();
+song21.src = "music/IWontGiveUp.mp3";
+
+var song22 = new Audio();
+song22.src = "music/CantHelpFallingInLove.mp3";
+
+
+
+
+
+function playsong(){
+ var songId = this.innerHTML;
+ console.log(songId);
+
+ switch (songId) {
+  case "Cant stand it":
+   song1.play();
+   break;
+
+  case "Cielo Rojo":
+   song2.play();
+   break;
+
+  case "Pajarito del amor":
+   song3.play();
+   break;
+
+  case "Total eclipse of the heart":
+   song4.play();
+   break;
+
+  case "Llamado de Emergencia":
+   song5.play();
+   break;
+
+  case "Antologia":
+   song6.play();
+   break;
+
+  case "Si pudiera":
+   song7.play();
+   break;
+
+  case "Quedate":
+   song8.play();
+   break;
+
+  case "La distancia entre los puntos":
+   song9.play();
+   break;
+
+   case "Error":
+   song10.play();
+   break;
+
+   case "Somebody Else":
+   song11.play();
+   break;
+
+   case "Let her go":
+   song12.play();
+   break;
+
+   case "En su lugar":
+   song13.play();
+   break;
+
+   case "The Only Exception":
+   song14.play();
+   break;
+
+   case "James Dean and Audrey Hepburn":
+   song15.play();
+   break;
+
+   case "Snuff":
+   song16.play();
+   break;
+
+   case "Vermillion II":
+   song17.play();
+   break;
+
+   case "With me":
+   song18.play();
+   break;
+
+   case "Thunder":
+   song19.play();
+   break;
+
+   case "Por si me faltas":
+   song20.play();
+   break;
+
+   case "I wont give up":
+   song21.play();
+   break;
+
+   case "Nuestra cancion":
+   song22.play();
+   break;
+
+  default:
+   console.log("wrong input");
+   break;
+ }
+}
+
+function pausesong(){
+ var songId = this.innerHTML;
+ console.log(songId);
+
+ switch (songId) {
+  case "Cant stand it":
+   song1.pause();
+   break;
+
+  case "Cielo Rojo":
+   song2.pause();
+   break;
+
+  case "Pajarito del amor":
+   song3.pause();
+   break;
+
+  case "Total eclipse of the heart":
+   song4.pause();
+   break;
+
+  case "Llamado de Emergencia":
+   song5.pause();
+   break;
+
+  case "Antologia":
+   song6.pause();
+   break;
+
+  case "Si pudiera":
+   song7.pause();
+   break;
+
+  case "Quedate":
+   song8.pause();
+   break;
+
+  case "La distancia entre los puntos":
+   song9.pause();
+   break;
+
+   case "Error":
+   song10.pause();
+   break;
+
+   case "Somebody Else":
+   song11.pause();
+   break;
+
+   case "Let her go":
+   song12.pause();
+   break;
+
+   case "En su lugar":
+   song13.pause();
+   break;
+
+   case "The Only Exception":
+   song14.pause();
+   break;
+
+   case "James Dean and Audrey Hepburn":
+   song15.pause();
+   break;
+
+   case "Snuff":
+   song16.pause();
+   break;
+
+   case "Vermillion II":
+   song17.pause();
+   break;
+
+   case "With me":
+   song18.pause();
+   break;
+
+   case "Thunder":
+   song19.pause();
+   break;
+
+   case "Por si me faltas":
+   song20.pause();
+   break;
+
+   case "I wont give up":
+   song21.pause();
+   break;
+
+   case "Nuestra cancion":
+   song22.pause();
+   break;
+
+  default:
+   console.log("wrong input");
+   break;
+ }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Canciones</h2>
+<p>Elegí las canciones que puse en la pestaña anterior porque hubo un cachito de letra, o la misma canción, que me recordó a ti</p>
+<p>Cada que pases por un recuadro tienes que subir para ver el mensaje, no logré solucionarlo</p>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openSong(event, 'CantStandIt')">Can't Stand it</button>
+  <button class="tablinks" onmouseover="openSong(event, 'CieloRojo')">Cielo rojo</button>
+  <button class="tablinks" onmouseover="openSong(event, 'PajaritoDelAmor')">Pajarito Del Amor</button>
+  <button class="tablinks" onmouseover="openSong(event, 'TotalEclipseOfTheHeart')">Total eclipse of the heart</button>
+  <button class="tablinks" onmouseover="openSong(event, 'LlamadoDeEmergencia')">Llamado De Emergencia</button>
+  <button class="tablinks" onmouseover="openSong(event, 'Antologia')">Antologia</button>
+  <button class="tablinks" onmouseover="openSong(event, 'SiPudiera')">Si Pudiera</button>
+  <button class="tablinks" onmouseover="openSong(event, 'Quedate')">Quedate</button>
+  <button class="tablinks" onmouseover="openSong(event, 'LaDistanciaEntreLosPuntos')">La Distancia Entre Los Puntos</button>
+  <button class="tablinks" onmouseover="openSong(event, 'Error')">Error</button>
+  <button class="tablinks" onmouseover="openCity(event, 'SomebodyElse')">Somebody Else</button>
+  
+  <button class="tablinks" onmouseover="openSong(event, 'LetHerGo')">Let Her Go</button>
+  <button class="tablinks" onmouseover="openSong(event, 'EnSuLugar')">En Su Lugar</button>
+  <button class="tablinks" onmouseover="openSong(event, 'TheOnlyException')">The Only Exception</button>
+  <button class="tablinks" onmouseover="openSong(event, 'JamesDeanAudreyHepburn')">James Dean & Audrey Hepburn</button>
+  <button class="tablinks" onmouseover="openSong(event, 'Snuff')">Snuff</button>
+  <button class="tablinks" onmouseover="openSong(event, 'VermillionII')">Vermillion part II</button>
+  <button class="tablinks" onmouseover="openSong(event, 'WithMe')">With Me</button>
+  <button class="tablinks" onmouseover="openSong(event, 'Thunder')">Thunder</button>
+  <button class="tablinks" onmouseover="openSong(event, 'PorSiMeFaltas')">Por Si Me Faltas</button>
+  <button class="tablinks" onmouseover="openSong(event, 'IWontGiveUp')">I Wont Give Up</button>
+
+  <button class="tablinks" onmouseover="openSong(event, 'CantHelpFallingInLove')">Can't Help Falling In Love</button>
+
+</div>
+
+<div id="CantStandIt" class="tabcontent">
+  <h2>Never Shout Never</h2>
+  <h3>Can't Stand It</h3>
+
+  <p>Esta canción, y al grupo, los conozco desde que entré a CCH. Esta canción llegué a la idea, o conclusión, junto con una amiga de que sólo se le podia <i>dedicar</i> a alguien de la cual pudieras decir sin pena que te encontrabas enamorado/a de esa persona. <br>
+  Y por es puse esta canción aquí. Porque considero, bajo esta premisa, que tu nombre me hace eco como decir que "Estoy enamorado" -de ti-
+
+  </p>
+</div>
+
+<div id="CieloRojo" class="tabcontent">
+  <h2>Lo blondo</h2>
+  <h3>CieloRojo</h3>
+  <p><i>"Solo sin tu cariño, voy caminando, voy caminando<br>
+Y no sé qué hacer<br>
+Ni el cielo me contesta cuando pregunto por tí mi bien <br>
+No he podido olvidarte desde la noche <br>
+Desde la noche en que te perdí"</i></p>
+<p>Esta canción siempre la he atribuido a una situación donde pierdes a alguien por acciones propias, o que se hace algo que suscita la partida o la lejania de una persona.
+</p> 
+<p>
+  En este caso, pues el constante reclamo de mi hacia ti, los celos y las crecientes ideas respecto a ti con Alan. Y como tu lo dijiste, yo hablaba como si ya hubiese pasado algo.  
+</p>
+</div>
+
+<div id="PajaritoDelAmor" class="tabcontent">
+  <h2>Carla Morrison</h2>
+  <h3>Pajarito del amor</h3>
+  <p>Yo sé que te caga Carla Morrison. Pero la puse por la letra, deberitas. <br>
+    <i>
+    "Despierto y me pongo a pensar<br>
+    Donde y cuando tu volverás <br>
+    Yo sé yo tengo la culpa <br>
+    Yo se te debo disculpas <br>
+    Yo sé fui perdiéndote"</i>
+    <p>Sí, siento que te perdí. Por el hecho de que te reclamaba por Alan porque <i>estaba </i> convencido de que él te llamaba la atención. Porque a mi perspectiva, él era diferente a cualquier otro amigo que tenias.</p>
+  </p>
+</div>
+
+<div id="TotalEclipseOfTheHeart" class="tabcontent">
+  <h2>Bonnie Tyler</h2>
+  <h3>Total Eclipse Of The Heart</h3>
+  <p> <b>TODA LA LETRA!</b> </p>
+</div>
+
+<div id="LlamadoDeEmergencia" class="tabcontent">
+  <h2>Daddy Yankee</h2>
+  <h3>Llamado De Emergencia</h3>
+  <p>Habia, hay, dias en los que te necesitaba. Queria que tú me buscaras, que tú llegaras a <i>sanar</i> el dolor de esta situación</p>
+  <i>
+    Sin ti mi camino, se desaparece <br>
+    Si ti las espinas, son las que florecen <br>
+    Sin ti, yo no vivo <br>
+    Sin ti, no se escribe la historia del amor <br>
+    <br>
+    Sin ti mi poema, se queda sin versos <br>
+    Si tú me iluminas la estrella de mi universo <br>
+    Mis signos vitales van disminuyendo <br>
+    Ven por favor. <br>
+  </i>
+</div>
+
+<div id="Antologia" class="tabcontent">
+  <h2>Shakira</h2>
+  <h3>Antologia</h3>
+  <p><i>"Desarrollaste mi sentido del olfato <br>
+Y fue por ti que aprendí a querer los gatos <br>
+Despegaste del cemento mis zapatos <br>
+Para escapar los dos volando un rato"</i> <br>
+
+</p>
+</div>
+
+<div id="SiPudiera" class="tabcontent">
+  <h2>Manuel Medrano</h2>
+  <h3>Si pudiera</h3>
+  <p>La primera vez que te mandé esta cancion fue con un mensaje super largo. Y te la mandaba porque me arrepentia de verte con alguien más. Porque me daba cuenta, tarde, de que eras tú. Que habias sido tú todo el tiempo que me preguntaba ¿Qué busco en alguien?. Aunque la preguntaba no era acertada, ya que la la respuesta correcta era 'La busco a ella' (A ti.) </p>
+    <br>
+ <i> Tengo mucha prisa por ir a buscarte <br>
+luego me arrepiento, me gana el coraje <br> </i>
+
+</div>
+
+<div id="Quedate" class="tabcontent">
+  <h2>Manuel Medrano</h2>
+  <h3>Quedate</h3>
+  <p> <i> Quédate <br>
+      Con todo lo que no tengo, quédate <br>
+      Con mis manos, con mis dedos, quédate <br>
+      Que yo ya no los quiero <br>
+      Si no estás aquí... </i></p>
+
+</div>
+
+<div id="LaDistanciaEntreLosPuntos" class="tabcontent">
+  <h2>Max Chinasky</h2>
+  <h3>La Distancia Entre Los Puntos</h3>
+  <p>
+    <i>El cardiovascular actúa pero nunca estudia <br>
+        Se nubla la razón cuando el sentimiento diluvia</i> <br>
+  </p>
+  <p><i> En la mochila llevo una sonrisa, <br>
+        Que pienso regalarte si nos encontramos antes que las prisas <br>
+        Para intercambiar momentos gratos. <br></i></p>
+</div>
+
+<div id="Error" class="tabcontent">
+  <h2>Don Tetto</h2>
+  <h3>Mi error</h3>
+  <p> <i> Pasa el tiempo <br>
+          Hoy te olvido y mañana te pienso <br>
+          Soy sincero <br>
+          Toco fondo cuando no te tengo <br> </i></p>
+</div>
+
+<div id="SomebodyElse" class="tabcontent">
+  <h2>The 1975</h2>
+  <h3>Somebody else</h3>
+  <p> 
+    <i> Pasa el tiempo <br>
+    Hoy te olvido y mañana te pienso <br>
+    Soy sincero <br>
+    Toco fondo cuando no te tengo <br></i>
+  </p>
+</div>
+
+<div id="LetHerGo" class="tabcontent">
+  <h3>Let her go</h3>
+  <p>Este <i>tiempo</i> ha sido eterno. Y eso que no sé si sólo es un momento o si en realidad es algo definitivo.</p>
+  <p>Sea el caso, tu ausencia ha dolido. Lo más mínimo duele, encontrar tu nombre, o algo que me recuerde a ti. <br>
+    También ha dolido <i>un poco</i> saber que estás ahí. Que no me buscas, que puede que tú si estés bien, o al menos mejor.
+  </p>
+  <p>
+    <i>
+      Well you only need the light when it's burning low<br>
+      Only miss the sun when it starts to snow<br>
+      Only know you love her when you let her go<br>
+      Only know you've been high<br>
+      When you're feeling low<br>
+    </i>
+  </p>
+
+  <p>
+    <b>Traducción:</b>
+    <br>
+    <i>
+      solo necesitas la luz cuando se está consumiendo, <br>
+      solo echas de menos el sol cuando empieza a nevar,<br>
+      solo sabes que la quieres cuando la dejas marchar.<br>
+      Solo sabes que has estado bien,<br>
+      cuando te sientes de bajón.
+    </i>
+  </p>
+</div>
+
+<div id="EnSuLugar" class="tabcontent">
+  <h2>Yuridia</h2>
+  <h3>En su lugar</h3>
+  <p>Esta canción sonó un día que estaba haciendo el mandado jeje <br>
+    Y la puse por un cachito de la canción.
+  </p>
+  <p>
+    <i>
+      Robaste mi corazón y estoy mal, no te puedo dejar de pensar<br>
+      Me da miedo tu prisa y tú voz cuando dices adiós y me cuesta aceptar (esa es)<br>
+      Porque quiero tenerte para mí<br>
+      Has dejado un espacio dentro de mí<br>
+      Y yo no, no puedo estar si tú te vas<br>
+      Quiero que estés junto a mí<br>
+      Yo quiero estar en su lugar <br>
+    </i>
+  </p>
+</div>
+
+<div id="TheOnlyException" class="tabcontent">
+  <h2>Paramore</h2>
+  <h3>The only exception</h3>
+
+  <p>
+    <i>
+      When I was younger
+      I saw my daddy cry <br>
+      And curse at the wind<br>
+      He broke his own heart<br>
+      And I watched<br>
+      As he tried to reassemble it<br>
+      And my momma swore<br>
+      That she would never let herself forget<br>
+      And that was the day that I promised<br>
+      I'd never sing of love<br>
+      If it does not exist, but darlin'<br>
+      <b>You are, the only exception</b><br>
+    </i>
+  </p>
+
+  <b>Traducción:</b>
+  <br>
+  <p>
+    <i>
+      Cuando era más joven, <br>
+      vi a mi padre llorar<br>
+      y maldecí al viento.<br>
+      Rompió su propio corazon,<br>
+      y yo miraba<br>
+      mientras él trataba de volver a ensamblarlo.<br>
+      <br>
+      Y mi madre juró que<br>
+      nunca permitiría que se le olvidara,<br>
+      y aquel fue el dia que prometí<br>
+      que nunca cantaria sobre el amor,<br>
+      si no existe.<br>
+      <br>
+      Pero cariño,<br>
+      Tú eres la unica excepcion.<br>
+    </i>
+    <br>
+    Yo soy <i>daddy</i> y <i>momma</i> (Creo que eso se lee un poco raro jajaja.)
+  </p>
+</div>
+
+<div id="JamesDeanAudreyHepburn" class="tabcontent">
+  <h2>Sleeping with Sirens!</h2>
+  <h3>James Dean & Audrey Hepburn</h3>
+  <p>La canción por sí misma es una joya, y la letra es muy bonita. Ya te he mandado esta canción, y te he dicho que pienso en ti con esta canción. Pero además de eso, esta canción es especial porque es una de las canciones que recuerdo que tú tenias en tu teléfono cuando me lo prestabas en PAE.</p>
+  <p>
+    <i>
+      I've been away for a long time <br>
+      Such a long time <br>
+      And I miss you there <br>
+      I can't imagine being anywhere else <br>
+      I can't imagine being anywhere else but here <br>
+      <br>
+      They say that love is forever<br>
+      Your forever is all that I need<br>
+      Please stay as long as you need<br>
+      Can't promise that things won't be broken<br>
+      But I swear that I will never leave<br>
+      Please stay forever with me<br>
+    </i>
+  </p>
+
+
+  <p>
+    <b>Traducción:</b>
+    <br>
+    <i>
+      He estado lejos por mucho tiempo<br>
+      Un largo tiempo<br>
+      Y te extraño allí<br>
+      No me puedo imaginar estar en otro lado<br>
+      No me puedo imaginar estar en otro lugar que no sea aquí<br>
+      <br>
+      Ellos dicen que el amor es para siempre<br>
+      Tu siempre es todo lo que necesito<br>
+      Por favor, quédate tanto como lo necesites<br>
+      No puedo prometer que las cosas no se romperán<br>
+      Pero juro que nunca me iré<br>
+      Por favor, quédate siempre conmigo<br>
+    </i>
+  </p>
+
+
+</div>
+
+<div id="Snuff" class="tabcontent">
+  <h2>Corey Taylor</h2>
+  <h3>Snuff</h3>
+  <p>Esta canción sólo la escucho en momentos triste. <br>
+      Puse esta canción sólo por un cachito de canción es especifico.
+  </p>
+  <p>
+    <i>
+      Ooh, my love was punished long ago <br>
+      If you still care don't ever let me go
+    </i>
+  </p>
+
+  <p>
+    <b>Traducción:</b>
+    <br>
+    <i>
+      Ooh, mi amor fue castigado hace mucho tiempo <br>
+      Si todavía te importa, nunca me dejes ir
+    </i>
+  </p>
+</div>
+
+<div id="VermillionII" class="tabcontent">
+  <h2>Slipknot</h2>
+  <h3>Vermillion part II</h3>
+  <p>
+    <i>
+      All the torment and the pain <br>
+      Leaked through and covered me <br>
+      I'd do anything to have her to myself <br>
+      Just to have her for myself <br>
+      Now I don't know what to do <br>
+      </i>
+    </p>
+    <br>
+    <b>Traducción:</b>
+    <br>
+    <p>
+      <i>
+        Todo el tormento y el dolor <br>
+        Se filtró y me cubrió <br>
+        Haría cualquier cosa por tenerla para mí misma <br>
+        Solo para tenerla para mí <br>
+        Ahora no sé qué hacer <br>
+      </i>
+    </p>
+
+
+</div>
+
+<div id="WithMe" class="tabcontent">
+  <h2>Sum41</h2>
+  <h3>With me</h3>
+  <p>
+    <i>
+    I'll wait here forever just to, to see you smile<br>
+    'Cause it's true: I am nothing without you<br>
+    Through it all, I made my mistakes<br>
+    I stumble and fall, but I mean these words<br>
+    I want you to know: with everything, I won't let this go<br>
+    These words are my heart and soul<br>
+    I'll hold on to this moment, you know<br>
+    'Cause I'd bleed my heart out to show that I won't let go<br>
+    </i>
+  </p>
+  <b>Traducción:</b>
+  <br>
+  <p>
+    <i>
+      Esperaré aquí para siempre solo para verte sonreír<br>
+      Porque es verdad: no soy nada sin ti<br>
+      A pesar de todo, cometí mis errores<br>
+      Me tropiezo y caigo, pero quiero decir estas palabras<br>
+      Quiero que sepas: con todo, no dejaré que esto pase<br>
+      Estas palabras son mi corazón y mi alma<br>
+      Me aferraré a este momento, sabes<br>
+      Porque me desangraría para demostrar que no te dejaré ir<br>
+    </i>
+  </p>
+</div>
+
+<div id="Thunder" class="tabcontent">
+  <h2>Boys likes girls</h2>
+  <h3>Thunder</h3>
+  <p>Inicialmente iba <i>Enganchado a ti</i> de Enrique Bunbury. Pero ambas dicen algo similar.</p>
+  <br>
+  <p>
+    Toda la letra de la canción me hace pensar en ti en este momento.
+  </p>
+</div>
+
+<div id="PorSiMeFaltas" class="tabcontent">
+  <h2>Dante</h2>
+  <h3>Por si me faltas</h3>
+  <p>Toda la letra :( </p>
+</div>
+
+<div id="IWontGiveUp" class="tabcontent">
+  <h2>Jason Mraz</h2>
+  <h3>I wont give up</h3>
+  <p>TOOOOOOOOOOOOOODA la letra. Lo que me hace sentir aun peor es pensar en la poibilidad de ser aquél que quiere seguir. Que tú sí consideras seriamente cortar :'(</p>
+</div>
+
+<div id="CantHelpFallingInLove" class="tabcontent">
+  <h2>Twenty One Piltos</h2>
+  <h3>Can't help falling in love</h3>
+  <p>Esta fue nuestra primera canción. La primera que creo que decia por los dos lo que sentiamos en ese momento<br>
+      Esta canción yo la considero el sountrack de lo que fue el inicio de nuestro amor. <br>
+      <b>Te amo, y mucho.</b>
+
+  </p>
+
+</div>
+<div class="clearfix"></div>
+
+<script>
+function openSong(evt, song) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(song).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

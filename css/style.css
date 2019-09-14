@@ -1,0 +1,209 @@
+*{
+ margin: 0; 
+ padding: 0;
+ box-sizing: border-box; 
+ font-family: 'Maven Pro', sans-serif;
+ background-color: #FFEEFCFF;
+
+}
+
+h1{
+ text-align: center; 
+ font-size: 1.8rem;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ color: black; 
+ padding: 30px 0; 
+}
+
+h3{
+ text-align: center; 
+ font-size: .8rem;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ color: black; 
+ padding: 3px 0; 
+}
+
+a:link {
+  color: black;
+}
+
+main{
+ width: 90%; 
+ height: 550px;
+ margin: auto; 
+ 
+ display: flex; 
+ justify-content: space-around;
+ align-items: center; 
+ flex-wrap: wrap;
+
+}
+
+div{
+ width: 30%; 
+ height: 160px;
+ /*border: 1px solid red;*/
+ box-shadow: 2px 2px 5px grey;
+ border-radius: 10px; 
+ cursor: pointer;
+text-align: center;
+}
+
+.a:hover{
+ 
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-color: #FFFFFFFF;
+
+ transition: background-color ease-in 2.5s;
+
+}
+
+
+.b:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.c:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.d:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.e:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.f:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.g:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.h:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.i:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.j:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.k:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.l:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.m:hover{
+background-color: #FFFFFFFF;
+transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.n:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.o:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.p:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.q:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.r:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.s:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.t:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.u:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.v:hover{
+background-color: #FFFFFFFF;
+ transition: background-color ease-in 2.5s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background
+
+}
+
